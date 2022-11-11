@@ -58,4 +58,9 @@ int main()
     insert(50);
     // insert(60);
     display();
+    delet ();
+    display ();
+    insert (60);
+    delet ();
+    display ();
 }
