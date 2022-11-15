@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define n 10
-//int a[]={90,80,70,60,50,40,30,20,10,5};
+int a[]={90,80,70,60,50,40,30,20,10,5};
 void print(int a[])
 {
     printf("\n");
@@ -14,7 +14,7 @@ int QuickSortc(int a[], int first, int last)
     int i, j, temp, pivot;
     if (first < last)
     {
-        // printf ("\nInside loop :- \n");
+        printf ("\nInside loop :- \n");
         print(a);
         pivot = first;
         i = first, j = last;
@@ -41,10 +41,12 @@ int QuickSortc(int a[], int first, int last)
 }
 
 int main()
-{
-    int a[n];
-    for (int i = 0; i < n; i++)
-        a[i] = rand() % 99 + 1;
+{   
+    //int a[n];
+    //for (int i = 0; i < n; i++)
+        //a[i] = rand() % 99 + 1;
 
     QuickSortc(a, 0, n - 1);
+    printf("\n After sorting Array: \n");
+    print(a);
 }
